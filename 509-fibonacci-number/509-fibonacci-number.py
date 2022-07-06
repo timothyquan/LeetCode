@@ -1,10 +1,10 @@
 class Solution:
     def fib(self, n: int) -> int:
-        def rec_fib(n, l=[0,1], i=0):
-            if i < n: 
-                return rec_fib(n, [l[1], l[0]+l[1]], i+1)
-            return l[0] 
+        a,b = 0,1
+        for _ in range(0,n):
+            b += a
+            a = b-a
+        return a
+            
         
-                   
-        return rec_fib(n)
              
