@@ -4,14 +4,9 @@ class Solution:
         for c in s: 
             charmap.setdefault(c, 0)
             charmap[c] += 1
-        dromlen = 0
-        odds = False
-        for c in (charmap.values()):
-            if c % 2 != 0:
-                odds = True
-                c -= 1
-            dromlen += c
-        return dromlen + odds
+            
+        length = sum([(c//2) * 2 for c in charmap.values()])
+        return length if length == len(s) else length + 1
                 
             
         
