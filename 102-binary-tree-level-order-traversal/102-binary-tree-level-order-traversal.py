@@ -10,7 +10,7 @@ class Solution:
         
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         if root: self.records(root)
-        return [nodes for nodes in self.nodemap.values()]
+        return self.nodemap.values()
     
         
     def records(self, node, level = 0):
