@@ -1,11 +1,11 @@
 class Solution:
     def repeatedCharacter(self, s: str) -> str:
-        cmap = {}
+        chars = set()
         for c in s:
-            cmap.setdefault(c, 0)
-            cmap[c] += 1
-            if cmap[c] > 1: 
+            if c in chars:
                 return c
+            else:
+                chars.add(c)
             
             
        
