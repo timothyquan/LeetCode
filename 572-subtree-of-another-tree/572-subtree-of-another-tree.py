@@ -6,9 +6,6 @@
 #         self.right = right
 class Solution:
         
-    def __init__(self):
-        self.samesame = False
-        
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
         if root and subRoot:
             if root.val == subRoot.val:
