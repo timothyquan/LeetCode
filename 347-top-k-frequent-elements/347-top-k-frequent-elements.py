@@ -8,5 +8,5 @@ class Solution:
         #heapq.heapify(heap)
         #return [heapq.heappop(heap)[1] for i in range(k)] 
         
-        sortdict = sorted(freqmap.items(), key=lambda item: item[1])
+        sortdict = sorted(freqmap.items(), key=itemgetter(1))
         return [i[0] for i in sortdict[-k:]] 
