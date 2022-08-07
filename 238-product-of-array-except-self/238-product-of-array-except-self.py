@@ -13,8 +13,8 @@ class Solution:
          
         
         allelse = []
-        for i,num in enumerate(nums):
-            if not num == 0:
+        for num in nums:
+            if num:
                 allelse.append(numprod//num)
             else:
                 prod = 1
