@@ -26,7 +26,7 @@ class Solution:
                     return False
                 if ri % 3 == 2 and ci % 3 == 2 and any(subs[subidx].values()):                    
                     return False
-        [print(r) for r in board]
+                
         return True        
                     
                     
