@@ -22,7 +22,6 @@ class Solution:
                 if ci == 8 and any(row.values()):
                     return False
                 if ri == 8 and any(cols[ci].values()):
-                    print(cols[ci])
                     return False
                 if ri % 3 == 2 and ci % 3 == 2 and any(subs[subidx].values()):                    
                     return False
