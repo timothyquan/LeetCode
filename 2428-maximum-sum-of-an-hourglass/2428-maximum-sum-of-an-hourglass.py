@@ -13,7 +13,6 @@ class Solution:
                         for n in range(3):
                             curhoursum += grid[m+mo][n+no]
                 maxhoursum = max(maxhoursum, curhoursum)
-                print(curhoursum)   
         return maxhoursum
                         
     
