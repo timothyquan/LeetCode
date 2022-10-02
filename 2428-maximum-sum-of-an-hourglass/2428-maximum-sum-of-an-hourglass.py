@@ -12,8 +12,7 @@ class Solution:
                     else:       
                         for n in range(3):
                             curhoursum += grid[m+mo][n+no]
-                if curhoursum > maxhoursum:
-                    maxhoursum = curhoursum 
+                maxhoursum = max(maxhoursum, curhoursum)
                 print(curhoursum)   
         return maxhoursum
                         
